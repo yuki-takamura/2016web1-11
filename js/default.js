@@ -1,4 +1,2 @@
 
-window.alert('Hello World!');
-
-console.log('Hello World!');
+document.getElementById('choice').textContent = new Date();
