@@ -1,4 +1,4 @@
-
+var startTime = new Date();
 var number = Math.floor(Math.random()*3) + 1;
 
 while(true){
@@ -19,8 +19,11 @@ while(true){
  }
 } 
 
+var endTime = new Date();
+
+document.getElementById('choice').textContent = message;
+document.getElementById('choice').textContent = 'かかった時間は' + (endTime -startTime);
+
 function Reload(){
  location.reload();
 }
- 
-document.getElementById('choice').textContent = message;
