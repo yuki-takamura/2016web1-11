@@ -21,8 +21,7 @@ while(true){
 
 var endTime = new Date();
 
-document.getElementById('choice').textContent = message;
-document.getElementById('choice').textContent = 'かかった時間は' + (endTime -startTime);
+document.getElementById('choice').textContent = message + '\nかかった時間は' + (endTime -startTime + "ms");
 
 function Reload(){
  location.reload();
