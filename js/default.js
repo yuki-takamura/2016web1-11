@@ -6,6 +6,7 @@ while(true){
  var message;
  if(answer === number){
 　 message = 'あたり!'
+　 var endTime = new Date();
 　 break;
  }else if(answer < number && answer != 999){
    message = '残念!もっと大きいです';
@@ -19,7 +20,7 @@ while(true){
  }
 } 
 
-var endTime = new Date();
+
 
 document.getElementById('choice').textContent = message + '  かかった時間は' + (endTime -startTime + "ms");
 
