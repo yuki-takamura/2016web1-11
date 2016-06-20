@@ -5,8 +5,7 @@ while(true){
  var answer = parseInt(window.prompt('数あてゲーム。1～3の数字を入力してください\n999を入力すると終了できます'));
  var message;
  if(answer === number){
-　 message = 'あたり!'
-　 var endTime = new Date();
+　 message = 'あたり!;
 　 break;
  }else if(answer < number && answer != 999){
    message = '残念!もっと大きいです';
@@ -20,7 +19,7 @@ while(true){
  }
 } 
 
-
+var endTime = new Date();
 
 document.getElementById('choice').textContent = message + '  かかった時間は' + (endTime -startTime + "ms");
 
