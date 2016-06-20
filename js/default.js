@@ -1,8 +1,8 @@
 
-var number = Math.floor(Math.random()*3);
+var number = Math.floor(Math.random()*3) + 1;
 
 while(true){
- var answer = parseInt(window.prompt('数あてゲーム。0～2の数字を入力してください'));
+ var answer = parseInt(window.prompt('数あてゲーム。1～3の数字を入力してください'));
  var message;
  if(answer === number){
 　 message = 'あたり!'
@@ -12,7 +12,7 @@ while(true){
  }else if(number < answer){
    message = '残念!もっと小さいです';
  }else{
-   message = '0～3の数字を入力してください';
+   message = '1～3の数字を入力してください';
  }
 } 
  
