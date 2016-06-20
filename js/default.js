@@ -18,5 +18,9 @@ while(true){
    message = '1～3の数字を入力してください';
  }
 } 
+
+function Reload(){
+ location.reload();
+}
  
 document.getElementById('choice').textContent = message;
