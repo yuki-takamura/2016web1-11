@@ -7,9 +7,9 @@ while(true){
  if(answer === number){
 　 message = 'あたり!'
 　 break;
- }else if(answer < number){
+ }else if(answer < number && answer != 999){
    message = '残念!もっと大きいです';
- }else if(number < answer){
+ }else if(number < answer && answer != 999){
    message = '残念!もっと小さいです';
  }else if(answer === 999){
    message = '終了しました';
